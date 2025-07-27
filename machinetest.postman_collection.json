@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "da3edb41-d957-46ba-829a-0f40b79e0549",
+		"name": "machinetest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38528302"
+	},
+	"item": [
+		{
+			"name": "/api/createproduct",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"b\",\r\n    \"size\":\"1234\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/createproduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"createproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/createimage",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"6885da2dd96096d45f2a13a3\",\r\n    \"image\":\"b.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/createimage",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"createimage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/adddetails",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\":\"6885da2dd96096d45f2a13a3\",\r\n    \"color\":[\"red\",\"green\",\"yellow\",\"blue\"],\r\n    \"price\":\"1239\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/adddetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"adddetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/addrating",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ratedby\":\"T\",\r\n    \"rating\":\"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/addrating/6885da2dd96096d45f2a13a3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"addrating",
+						"6885da2dd96096d45f2a13a3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/productdetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:7000/api/productdetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"productdetails"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
